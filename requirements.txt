@@ -1,3 +1,5 @@
 langchain
 gradio
 python-dotenv
+openai
+
