@@ -40,7 +40,7 @@ def handle_mentoin(event, say):
 if __name__ == "__main__":
     app_env = os.environ.get("APP_ENV", "production")
 
-    if app_env == "productoin":
+    if app_env == "production":
         app.start(port=int(os.environ.get("PORT", 3000)))
     else:
         SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
